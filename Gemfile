@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'faraday'
 gem 'figaro'
+gem 'json'
 
 group :development, :test do
   gem 'pry'
