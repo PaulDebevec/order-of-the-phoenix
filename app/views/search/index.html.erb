@@ -1,0 +1,20 @@
+<h3>There are <%= @members.count %> Members</h3>
+
+<% @members.each do |member| %>
+  <ul class="member">
+    <section id="member-<%= member[:id] %>">
+      <li class="name">Name: <%= member[:name] %></li>
+      <% if !member[:role].nil? %>
+        <li class="role">Role: <%= member[:role] %></li>
+      <% else %>
+        <li class="role">Role: <%= member[:name] %>'s role is undefined</li>
+      <% end %>
+      <li class="house">House: <%= member[:house] %></li>
+      <% if !member[:patronus].nil? %>
+        <li class="patronus">Patronus: <%= member[:patronus] %></li>
+      <% else %>
+        <li class="patronus">Patronus: <%= member[:name] %> does not have a patronus</li>
+      <% end %>
+  </section>
+  </ul>
+<% end %>
