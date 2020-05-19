@@ -7,7 +7,7 @@ RSpec.describe 'Welcome screen search' do
 
     expect(current_path).to eq('/search')
 
-    expect(page).to have_content('There are 21 Members')
+    expect(page).to have_content('There are 21 Members Of Gryffindor In The Order of The Phoenix')
 
     within(first(".member")) do
       expect(page).to have_css(".name")
