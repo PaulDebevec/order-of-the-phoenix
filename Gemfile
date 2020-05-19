@@ -21,8 +21,6 @@ gem 'json'
 group :development, :test do
   gem 'pry'
   gem 'simplecov'
-  gem 'rspec-rails'
-  gem 'capybara'
   gem 'shoulda-matchers'
 end
 
